@@ -14,9 +14,9 @@ export class StockService {
         if (product) {
             const stock = this.stockRepo.create({product, shopId, quantityOnShelf, quantityInOrder });
             return this.stockRepo.save(stock);
-        } else {
-            throw new Error('Stock not found')
-        }
+        } 
+        throw new Error('Stock not found')
+        
     }
 
     async increaseStock(id: number, amount: number): Promise<Stock> {

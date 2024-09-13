@@ -1,4 +1,9 @@
 {
+  "name": "first-task",
+  "version": "0.0.1",
+  "description": "test task for junior dev",
+  "author": "BykovVik",
+  "license": "UNLICENSED",
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
@@ -12,5 +17,10 @@
     "@types/node": "^22.5.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.2"
+  }, "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "start:prod": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
   }
 }
